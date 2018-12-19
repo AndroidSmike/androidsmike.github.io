@@ -1,0 +1,265 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: 0.5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+img {
+display: block;
+width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display';
+font-weight: normal;
+letter-spacing: 1px;
+}
+body {
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 14px;
+line-height: 1;
+color: #373737;
+background: #f7f7f7;
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+content: "";
+display: table;
+clear: both;
+} 
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding: 0 15px;
+} 
+
+
+
+.regi {
+  display: block;
+  width: 20%;
+  margin-right: 60%;
+  float: right;
+  
+
+}
+.tap {
+   display: block;
+  width: 100%;
+  background: white;
+  color: black;
+  font-size: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+
+}
+
+/*********************************
+**********ШАПКА******************
+*********************************/
+header {
+  width: 100%; 
+  background: white;
+  box-shadow: 3px 3px 1px rgba(0,0,0,.05); 
+  padding: 15px 0; 
+  margin-bottom: 30px; 
+  position: relative; 
+}
+
+nav {
+  width: 100%; 
+}
+
+.logo {
+  color: white; 
+  display: block; 
+  float: left; 
+  font-size: 40px; 
+}
+
+.logo h1 {
+color: #000000;
+font-size: 50px;
+line-height: 50px;
+margin: 5px 0;
+text-align: left;
+text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+}
+
+.logo h1:hover {
+  color: #E51414;
+}
+
+.menu {
+  float: right;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.menu a {
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  display: block;
+  line-height: 100px;
+}
+
+.menu a:hover {
+  color: #F00404;
+}
+/*********************************
+**********Контент******************
+*********************************/
+
+.content-list {
+margin-bottom: 30px;
+width: 64%;
+float: left;
+}
+
+
+
+.post {
+  margin-bottom: 30px;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.post-content {
+  padding: 10px;
+}
+
+.post-content h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  text-align: justify;
+}
+
+.post-content p {
+  line-height: 1.5;
+  padding-bottom: 1em;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.post-image {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.tema {
+  margin-bottom: 15px;
+}
+
+.tema a {
+color: black;
+text-transform: uppercase;
+font-size: 30px;
+}
+
+.post-footer {
+  border-top :1px solid #979696;
+  border-bottom: 1px solid #979696;
+  position: relative;
+  margin-top: 15px;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 50px;
+  padding: 0 60px;
+  background: #202020;
+  letter-spacing: 0.1em;
+}
+
+/*********************************
+**********SideBar******************
+*********************************/
+aside {
+  width: 33.3333%;
+  float: right;
+}
+
+.sidebar {
+  padding: 20px 15px;
+  background: white;
+  font-size: 13px;
+  margin-bottom: 15px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sidebar-title {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0 0 black;
+}
+
+.sidebar-text {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+
+.sidebar-text p {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+
+/*********************************
+**********Подвал******************
+*********************************/
+
+footer {
+  padding: 30px 0;
+  background: #3C3D41;
+  color: white;
+}
+
+.footer-my {
+  float: left;
+}
+
+.footer-letter {
+  float: right;
+}
+
+.footer-letter a {
+  color: white;
+  text-align: right;
+}
+
+
+@media all and (min-width: 0){
+  {
+    background-color: black;
+  }
+}
+
+@media all and (min-width: 0){
+  {
+    background-color: black;
+  }
+}
