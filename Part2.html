@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<title></title>
+</head>
+
+
+
+
+<body>
+
+	<header>
+		<nav class="container">
+			<a href="index.php" class="logo">
+				<h1>Лабораторная<br>работа</h1>
+				<ul class="menu">
+					<li><a href="Part1.html">Практ.1</a></li>
+					<li><a href="Part2.html">практ.2</a></li>
+
+				</ul>
+			</a>
+		</nav>
+	</header>
+
+
+	<div class="container">
+		<article class="post">
+			<div class="post-image"><img src="img/Screenshot_1.png" alt=""></div>
+			<div class="post-content">
+				<div class="tema"><center><a href="Part2.html">Регистрация</a></center></div><br><br>
+				<form name="reg" method="post" action="reg.php">
+					<h2></h2>
+
+					<p>
+						<td>Имя* </td><input class="regi" type="text" name="Reg_name" value="" /><br>
+						<td>Фамилия:*<input class="regi" type="text" name="Reg_surname"></td><br>
+						<td>Адрес email:*<input class="regi" type="text" name="Reg_email"></td><br>
+						<td>Логин:*<input class="regi" type="text" name="Reg_login"></td><br>
+						<td>Пароль:*<input class="regi" type="password" name="Reg_pass1"></td><br>
+						<td>Повтор пароля:*<input class="regi" type="password" name="Reg_pass2"></td><br>
+						<td>Страна<td>
+							<select class="regi" name="Reg_Place" size="1" >
+								<option value="Ru">Россия</option>
+								<option value="Nor" selected >Норвегия</option>
+								<option value="Sh">Швеция</option>
+								<option value="USA">США</option>
+								<option value="Fin" selected >Финляндия</option>
+								<option value="Jp">Япония</option>
+							</select><br />
+							<td>Пол<td>
+								<select class="regi" name="Gender" size="1" >
+									<option value="man">мужской</option>
+									<option value="woman" selected >женский</option>
+								</select>
+								<br><br>
+								<td>
+									<input name="Reg_hobby[]" type="checkbox" value="sing" /> С усовиями регистраци согласен/а.
+								</td>
+								<br><br>
+								Поля, помеченные звездочкой (*) <br> являются обязательными для заполнения.
+								<br>
+								<input name="submit" type="submit" disabled value="Зарегистрироваться" >
+								<input  type=button value="Проверить" onclick="check()">
+								<input name="reset" type="reset" value="Очистить">
+							</p>
+
+							<script>
+								function check(){
+									if (reg.Reg_name.value!=""&& reg.Reg_surname.value!=""&&reg.Reg_email.value!=""&&reg.Reg_login.value!=""&&reg.Reg_pass1.value!=""&&reg.Reg_pass2.value!=""){
+										if (reg.Reg_pass1.value==reg.Reg_pass2.value){
+											document.reg.elements['submit'].disabled=false;
+										}
+										else{
+											alert('пароли не совпадают');
+										}
+									}
+									else{
+										alert ('заполните все поля');
+									}
+								}
+							</script>
+						</form>
+					</div>
+					
+				</article>
+			</div>
+
+			<footer>
+				<div class="container">
+					<div class="footer-my"><span>leonov © 2018</span></div>
+					<div class="footer-letter">
+						<a href="mailto:leonov.itmo@outlook.com">Написать письмо автору</a>
+					</div>
+				</div>
+			</footer>
+
+			<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+		</body>
+		</html>

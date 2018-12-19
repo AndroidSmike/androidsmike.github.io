@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<title></title>
+</head>
+
+
+
+
+<body>
+
+	<header>
+		<nav class="container">
+			<a href="index.html" class="logo">
+				<h1>Лабораторная<br>работа</h1>
+				<ul class="menu">
+					<li><a href="Part1.html">Практ.1</a></li>
+					<li><a href="Part2.html">Практ.2</a></li>
+					
+				</ul>
+			</a>
+		</nav>
+	</header>
+
+
+	<div class="container">
+		<article class="post">
+			<div class="post-image"><img src="img/1_123H-25KB7EbSHjv70HXrdl6w.png" alt=""></div>
+			<div class="post-content">
+				<div class="tema"><a href="Part1.html">Практическая 4.1</a></div>
+				<h2>Array</h2>
+				<p>
+					<script language=javascript>
+						var arr1=[1,2,3,4,5,6,7,8,9];
+						document.write("start- ",arr1, "<br />");
+						var arr2=arr1.reverse();
+						document.write("reverse- ",arr2,"<br />");
+						var arr3=arr2.sort();
+						document.write("sort-", arr3, "<br />");
+						var arr4=arr3.fill(0);
+						document.write("fill(0)- ",arr4,"<br />");
+						var arr5=arr4.pop();
+						document.write("pop- ",arr5,);
+					</script>
+				</p>
+
+				<h2>String</h2>
+				<p>
+					<script language=javascript>
+						var str="test my life ";
+						var script1=str.link(href="Part1.html");
+						var script2=str.italics();
+						var script3=str.repeat(2);
+						var script4=str.big();
+						var script5=str.small();
+						document.write(script1,'<br />', script2,"<br />", script3,"<br />",script4,"<br />",script5,);
+					</script>
+				</p>
+
+				<h2>data</h2>
+				<p>
+					<script language=javascript>
+						var date=new Date();
+						var day=new Date();
+						var year=new Date();
+						var hour=new Date();
+						var sec=new Date();
+						document.write("1. GetDate ", date.getDate(),"<br />","2. GetDay ", date.getDay(),"<br />3. GetYear ",date.getFullYear(),"<br />4. GetDHour ", date.getHours(),"<br />5. Getsec ",date.getSeconds());
+					</script>
+				</p>
+
+				<h2>math</h2>
+				<p>
+					<script language=javascript>
+						var math1=Math.max (1,2,3,435,2,12,341,53,42,513,5,);
+						var math2=Math.round(0.687625);
+						var math3=Math.sqrt(156);
+						var math4=Math.pow(math3,2);
+						var math5=Math.abs(-10);
+						var math6=Math.random();
+						var math7=Math.sin(math6);
+						document.write(math1,"-max (1,2,3,435,2,12,341,53,42,513,5,)<br />",math2," round 0.6....<br />",math3," scrt 156 <br />", math4," pow math3 on 2 <br />", math5," abc -10 <br />",math6," random <br />",math7," sin math6")
+					</script>
+				</p>
+
+			</div>
+		</article>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-my"><span>leonov © 2018</span></div>
+			<div class="footer-letter">
+				<a href="mailto:leonov.itmo@outlook.com">Написать письмо автору</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>
